@@ -1,45 +1,45 @@
-# Consent Mode v2 & ICO UK GDPR Framework | TAVARDT UK
+# Consent Mode v2 & ICO Compliance Framework | TAVARDT UK
 
-[![Validador de Consentimento](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
-[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-United Kingdom-00C853.svg)](https://ag.tavardt.com/uk/cybersecurity/)
+[![Technical%20Audit](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
+[![Jurisdiction](https://img.shields.io/badge/Jurisdiction-United Kingdom-00C853.svg)](https://ag.tavardt.com/uk/cybersecurity/)
 
-Google Consent Mode v2 implementation, tag sequencing, and technical compliance framework aligned with ICO guidelines and UK GDPR standards.
+Technical implementation of Google Consent Mode v2, prior script blocking, and technical compliance with ICO standards and the UK GDPR in the United Kingdom.
 
-Desenvolvido e mantido pela divisão de privacidade digital e engenharia de dados da **[TAVARDT UK](https://ag.tavardt.com/uk/)**.
+Developed and maintained by the cybersecurity and infrastructure defence division of **[TAVARDT UK](https://ag.tavardt.com/uk/)**.
 
 ---
 
-## 1. Execution Order & Architecture
+## 1. Execution Order and Architecture
 
-To ensure strict compliance with ICO guidance, this script must be included in the `<head>` of your webpage immediately before the Google Tag Manager container loader:
+To ensure strict compliance with ICO guidance, place this script in the <head> before calling the Google Tag Manager container:
 
 ```html
 <script src="consent-mode-v2.js"></script>
-<!-- O contentor do Google Tag Manager ou scripts de medição seguem aqui -->
+<!-- Google Tag Manager / measurement scripts execute here -->
 ```
 
 ---
 
 ## 2. Technical Capabilities
 
-* **Strict 'Denied' Default State:** Sets ad_storage, analytics_storage, ad_user_data, and ad_personalization to 'denied' prior to user interaction.
-* **Event-Driven Consent Update API:** Provides window.tavardtUpdateConsent() to trigger the structured tavardt_consent_updated event.
-* **Ads Data Redaction:** Enforces ads_data_redaction to strip click identifiers (GCLID/DCLID) when marketing consent is absent.
-* **URL Passthrough:** Configures url_passthrough to preserve measurement without storing persistent tracking cookies.
+* **Default Denied Baseline:** ad_storage, analytics_storage, and ad_user_data denied prior to explicit consent.
+* **Event-Driven Consent Update:** Global window.tavardtConsent.update() interface synchronized with the dataLayer.
+* **Advertising Parameter Redaction:** Built-in activation of ads_data_redaction to prevent identifier leakage.
+* **Cookieless Measurement Pass-through:** Enabled url_passthrough for aggregated attribution without local storage persistence.
 
 ---
 
-## 3. Technical Audit Checklist
+## 3. Compliance Checklist & Documentation
 
-Consulte a lista detalhada de requisitos técnicos para este país:
+Review the comprehensive technical requirements for the United Kingdom:
 
-* [Checklist Técnico de Conformidade](checklist.md)
+* [Checklist](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
 
 ---
 
 ## 4. Online Diagnostic Tools (United Kingdom)
 
-Audite a conformidade das suas etiquetas e proteja o seu domínio com ferramentas online verificadas:
+Audit the public infrastructure of your web properties using the TAVARDT diagnostic suite:
 
 * [Consent Mode v2 & UK GDPR Validator](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
 * [HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
@@ -49,6 +49,6 @@ Audite a conformidade das suas etiquetas e proteja o seu domínio com ferramenta
 
 ---
 
-## 5. Tag Governance & Privacy Advisory
+## 5. Technical Advisory & Remediation
 
-For tag architecture audits, ICO regulatory alignment, and analytics engineering in the United Kingdom, contact **[TAVARDT UK](https://ag.tavardt.com/uk/contact/)**.
+For enterprise tag container audits, CMP validation, and UK GDPR technical alignment, contact **[TAVARDT UK](https://ag.tavardt.com/uk/contact/)**.
