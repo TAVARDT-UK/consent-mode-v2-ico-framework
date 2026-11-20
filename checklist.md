@@ -1,25 +1,31 @@
-# ICO UK GDPR & Tag Governance Checklist
+# ICO UK GDPR Tag Governance Checklist
 
-**Regulatory Standard:** ICO Guidance on Cookies and Similar Technologies & UK GDPR  
-**Maintained by:** [TAVARDT UK](https://ag.tavardt.com/uk/)  
-
----
-
-## Technical Audit Points
-
-* **Prior Consent Enforcement:** Ensure tracking technologies are not set on user devices before receiving clear consent.
-* **Advanced Consent Signals:** Configure ad_storage, analytics_storage, ad_user_data, and ad_personalization to 'denied'.
-* **Data Minimisation:** Enforce ads_data_redaction to scrub click identifiers when consent is not granted.
-* **Tag Trigger Governance:** Configure GTM triggers to listen for dedicated consent update events.
+**Marco Regulatório:** ICO Guidance on Cookies & Data Protection Act 2018 (UK GDPR)  
+**Mantido por:** [TAVARDT UK](https://ag.tavardt.com/uk/)  
 
 ---
 
-## Online Verification Tools
+## Verificações Técnicas Obrigatórias
 
-Validate your tag deployment and perimeter security using TAVARDT diagnostic suites:
+* **Prior Consent Enforcement:** Ensure tracking technologies are not executed prior to the receipt of clear user consent.
+* **Equal Prominence for Rejection:** Provide users with a rejection mechanism that is as easy to access as the acceptance option.
+* **PII Leakage Prevention:** Audit dataLayer variables to prevent personal identifiers from being passed to analytics endpoints.
+* **GTM Trigger Sequencing:** Configure conversion tags to fire strictly upon receipt of valid consent update signals.
 
+---
+
+## Ferramentas Técnicas Online
+
+Valide a implementação das suas etiquetas utilizando a suíte de diagnósticos da TAVARDT:
+
+* [Consent Mode v2 & UK GDPR Validator](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
 * [HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
-* [Exposed Secret & Credential Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
-* [Full Diagnostic Suite](https://tools.tavardt.com/uk/)
+* [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/uk/dmarc-checker/)
+* [Exposed Credentials & Secret Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
+* [Full UK Technical Tools Portal](https://tools.tavardt.com/uk/)
 
-For professional privacy architecture, tag auditing, and CRO optimization, contact [TAVARDT UK](https://ag.tavardt.com/uk/contact/).
+---
+
+## Consultoria Especializada
+
+For tag architecture audits, ICO regulatory alignment, and analytics engineering in the United Kingdom, contact **[TAVARDT UK](https://ag.tavardt.com/uk/contact/)**.

@@ -1,49 +1,54 @@
 # Consent Mode v2 & ICO UK GDPR Framework | TAVARDT UK
 
-[![Privacy Compliance](https://img.shields.io/badge/Compliance-Consent%20Mode%20v2-5b3cf5.svg)](https://tools.tavardt.com/uk/)
-[![Regulatory Standard](https://img.shields.io/badge/Region-GBP-00C853.svg)](https://ag.tavardt.com/uk/)
+[![Validador de Consentimento](https://img.shields.io/badge/TAVARDT-Diagn%C3%B3stico%20T%C3%A9cnico-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
+[![Conformidade](https://img.shields.io/badge/Jurisdi%C3%A7%C3%A3o-United Kingdom-00C853.svg)](https://ag.tavardt.com/uk/cybersecurity/)
 
-Google Consent Mode v2 implementation, tag governance, and ICO UK GDPR compliance framework for UK enterprises.
+Google Consent Mode v2 implementation, tag sequencing, and technical compliance framework aligned with ICO guidelines and UK GDPR standards.
 
-Maintained by the analytics, privacy engineering, and cybersecurity division at [TAVARDT UK](https://ag.tavardt.com/uk/).
+Desenvolvido e mantido pela divisão de privacidade digital e engenharia de dados da **[TAVARDT UK](https://ag.tavardt.com/uk/)**.
 
 ---
 
-## 1. Architecture & Execution Order
+## 1. Execution Order & Architecture
 
-To achieve full compliance with ICO Guidance on Cookies and Similar Technologies & UK GDPR, this snippet must be positioned in the `<head>` of your website **immediately before** your Google Tag Manager container or tracking loader:
+To ensure strict compliance with ICO guidance, this script must be included in the `<head>` of your webpage immediately before the Google Tag Manager container loader:
 
 ```html
 <script src="consent-mode-v2.js"></script>
-<!-- Google Tag Manager / Analytics Script Follows Here -->
+<!-- O contentor do Google Tag Manager ou scripts de medição seguem aqui -->
 ```
 
 ---
 
-## 2. Core Capabilities
+## 2. Technical Capabilities
 
-* **Strict Default 'Denied' Posture:** Enforces privacy by default across all advertising, telemetry, and personal identifier parameters.
-* **Consent Update API:** Provides an event-driven `window.tavardtUpdateConsent()` method that triggers a structured `tavardt_consent_updated` dataLayer event.
-* **Ads Data Redaction:** Automatically strips click identifiers (such as GCLID and DCLID) from ad requests when marketing consent is absent.
-* **URL Passthrough:** Preserves conversion attribution across domain boundaries using cryptographic hashes without storing persistent browser cookies.
-
----
-
-## 3. Compliance Documentation
-
-Review our jurisdictional implementation guidelines:
-
-* [Technical Checklist](checklist.md): Step-by-step audit points for tag governance under ICO Guidance on Cookies and Similar Technologies & UK GDPR.
+* **Strict 'Denied' Default State:** Sets ad_storage, analytics_storage, ad_user_data, and ad_personalization to 'denied' prior to user interaction.
+* **Event-Driven Consent Update API:** Provides window.tavardtUpdateConsent() to trigger the structured tavardt_consent_updated event.
+* **Ads Data Redaction:** Enforces ads_data_redaction to strip click identifiers (GCLID/DCLID) when marketing consent is absent.
+* **URL Passthrough:** Configures url_passthrough to preserve measurement without storing persistent tracking cookies.
 
 ---
 
-## 4. Online Diagnostic Suite
+## 3. Technical Audit Checklist
 
-Audit your public web applications and verify tracking privacy on our regional testing platform:
+Consulte a lista detalhada de requisitos técnicos para este país:
 
-* [Online HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
-* [Exposed Credentials Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
+* [Checklist Técnico de Conformidade](checklist.md)
+
+---
+
+## 4. Online Diagnostic Tools (United Kingdom)
+
+Audite a conformidade das suas etiquetas e proteja o seu domínio com ferramentas online verificadas:
+
+* [Consent Mode v2 & UK GDPR Validator](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
+* [HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
 * [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/uk/dmarc-checker/)
-* [Complete Regional Diagnostic Suite](https://tools.tavardt.com/uk/)
+* [Exposed Credentials & Secret Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
+* [Full UK Technical Tools Portal](https://tools.tavardt.com/uk/)
 
-For comprehensive conversion tracking audits, consent management implementation, and technical consulting, contact [TAVARDT UK](https://ag.tavardt.com/uk/contact/).
+---
+
+## 5. Tag Governance & Privacy Advisory
+
+For tag architecture audits, ICO regulatory alignment, and analytics engineering in the United Kingdom, contact **[TAVARDT UK](https://ag.tavardt.com/uk/contact/)**.
