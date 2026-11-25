@@ -1,12 +1,10 @@
 # Consent Mode v2 & ICO Compliance Framework
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Technical Audit](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-yellow.svg)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Technical implementation of Google Consent Mode v2, prior script blocking, and technical compliance with ICO standards and the UK GDPR in the United Kingdom.
-
-Developed and maintained by the cybersecurity and infrastructure defence division of **TAVARDT**.
 
 ***
 
@@ -42,7 +40,6 @@ Review the comprehensive technical requirements for the United Kingdom:
 
 Audit the public infrastructure of your web properties using the TAVARDT diagnostic suite:
 
-* Consent Mode v2 & UK GDPR Validator
 * [HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
 * [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/uk/dmarc-checker/)
 * [Exposed Credentials & Secret Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
@@ -65,7 +62,7 @@ For enterprise tag container audits, CMP validation, and UK GDPR technical align
 ***
 
 ### License
-Released under the MIT License. See [LICENSE](LICENSE) for full details.
+Released under the MIT License.
 
 ***
 
