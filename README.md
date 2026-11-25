@@ -28,32 +28,23 @@ To ensure strict compliance with ICO guidance, place this script in the <head> b
 
 ***
 
-## 3. Compliance Checklist & Documentation
-
-Review the comprehensive technical requirements for the United Kingdom:
-
-* Checklist
-
-***
-
-## 4. Online Diagnostic Tools (United Kingdom)
+## 3. Online Diagnostic Tools (United Kingdom)
 
 Audit the public infrastructure of your web properties using the TAVARDT diagnostic suite:
 
 * [HTTP Security Headers Checker](https://tools.tavardt.com/uk/security-headers-check/)
 * [DMARC & Anti-Spoofing Verifier](https://tools.tavardt.com/uk/dmarc-checker/)
 * [Exposed Credentials & Secret Scanner](https://tools.tavardt.com/uk/exposed-files-scanner/)
-* [Full UK Technical Tools Portal](https://tools.tavardt.com/uk/)
 
 ***
 
-## 5. Technical Advisory & Remediation
+## 4. Technical Advisory & Remediation
 
 For enterprise tag container audits, CMP validation, and UK GDPR technical alignment, contact **TAVARDT**.
 
 ***
 
-## Useful Links
+## 5. Useful Links
 
 * **Corporate Portal:** https://ag.tavardt.com/uk/
 * **Diagnostic Suite:** https://tools.tavardt.com/uk/
