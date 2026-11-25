@@ -1,7 +1,9 @@
 # Consent Mode v2 & ICO Compliance Framework
 
-[![Technical%20Audit](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Technical Audit](https://img.shields.io/badge/TAVARDT-Technical%20Audit-5b3cf5.svg)](https://tools.tavardt.com/uk/consent-mode-v2-checker/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Node.js-yellow.svg)](https://nodejs.org/)
+
 Technical implementation of Google Consent Mode v2, prior script blocking, and technical compliance with ICO standards and the UK GDPR in the United Kingdom.
 
 Developed and maintained by the cybersecurity and infrastructure defence division of **TAVARDT**.
